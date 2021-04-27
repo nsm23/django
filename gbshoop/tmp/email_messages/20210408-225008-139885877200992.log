@@ -1,0 +1,14 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: 
+ =?utf-8?b?0J/QvtC00YLQstC10YDQttC00LXQvdC40LUg0YPRh9C10YLQvdC+0Lkg0LfQsNC/?=
+ =?utf-8?b?0LjRgdC4IDEyMzQ1?=
+From: django@gbshop.local
+To: django@gbshop.local
+Date: Thu, 08 Apr 2021 19:50:08 -0000
+Message-ID: <161791140875.8183.15261573533250456535@sergey-R560>
+
+Для подтверждения учетной записи 12345 на портале http://localhost:8000 перейдите по ссылке: 
+http://localhost:8000/auth/user/verify/django@gbshop.local/633c2a1ac067aef61b774fc1ced01cfb672851a7/
+-------------------------------------------------------------------------------

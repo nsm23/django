@@ -1,0 +1,16 @@
+{% extends 'adminapp/base.html' %}
+{% load static %}
+
+{% block menu %}
+{% endblock %}
+
+{% block container %}
+    <div class="category_delete">
+        <b>Are you sure, you want to delelte {{ object.name}}?</b>
+        <form method="post">
+            {% csrf_token %}
+            <input class="btn-danger" type="submit" value="Delete">
+        </form>
+        <a href="{% url 'new_admin:categories' %}" class="btn btn-success">Cancel</a>
+    </div>
+{% endblock %}

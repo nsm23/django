@@ -1,0 +1,14 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: 
+ =?utf-8?b?0J/QvtC00YLQstC10YDQttC00LXQvdC40LUg0YPRh9C10YLQvdC+0Lkg0LfQsNC/?=
+ =?utf-8?b?0LjRgdC4IHNlcmVnYQ==?=
+From: django@gbshop.local
+To: serega@gbuser.local
+Date: Thu, 08 Apr 2021 19:03:17 -0000
+Message-ID: <161790859718.6951.5667428345705419433@sergey-R560>
+
+Для подтверждения учетной записи serega на портале https://localhost:8000 перейдите по ссылке: 
+https://localhost:8000/auth/user/verify/serega@gbuser.local/4da1e937b6581dabb4cf6f1ade221c3221cb75b7/
+-------------------------------------------------------------------------------

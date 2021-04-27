@@ -1,0 +1,14 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: 
+ =?utf-8?b?0J/QvtC00YLQstC10YDQttC00LXQvdC40LUg0YPRh9C10YLQvdC+0Lkg0LfQsNC/?=
+ =?utf-8?b?0LjRgdC4IHN2ZXRhMjIy?=
+From: django@geekshop.local
+To: django@geekshop.local
+Date: Thu, 08 Apr 2021 19:35:13 -0000
+Message-ID: <161791051303.7616.2856079511445343489@sergey-R560>
+
+Для подтверждения учетной записи sveta222 на портале http://localhost:8000 перейдите по ссылке: 
+http://localhost:8000/auth/user/verify/django@geekshop.local/15eaf2df8b0f6fe2b4726fb6871a6b616f7e3cc5/
+-------------------------------------------------------------------------------

@@ -1,0 +1,40 @@
+{% extends 'mainapp/base.html' %}
+
+{% block container %}
+		<div class="hero-white">
+			{% include 'mainapp/includes/menu.html' %}
+		</div>
+
+		<div class="details">
+			{% include 'mainapp/includes/prod_menu.html' %}
+
+			<div class="details-products">
+				<div class="details-slider">
+					<div class="slider-product">
+						<img src="/media/{{ product.image }}">
+					</div>
+					<div class="slider-control">
+						<div class="block">
+							<a href="{% url 'basket:append' product.pk %}">
+								<img src="/media/{{ product.image }}" alt="">
+								<div class="text"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="description">
+					<h3 class="big-bold">{{ product.name }}</h3>
+					<br>
+					<p class="price"> {{ product.price }} <span>руб</span></p>
+					<a href="{% url 'basket:append' product.pk %}" class="red-button">
+						заказать <i class="fa fa-chevron-right" aria-hidden="true"></i>
+					</a>
+					<div class="description-text">
+						<p>{{ product.description }}</p>
+					</div>
+				</div>
+			</div>
+
+			</div>
+{% endblock %}

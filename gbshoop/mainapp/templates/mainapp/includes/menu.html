@@ -1,0 +1,65 @@
+<div class="header clearfix">
+    <a href="{% url 'general:home' %}" class="logo"></a>
+	<ul class="menu">
+		<li>
+			<a href="{% url 'general:home' %}"
+			   class="{% if request.resolve_match.url_name == 'home' %}active{%endif%}">
+				home
+			</a>
+		</li>
+		<li>
+			<a href="{% url 'general:products' %}"
+			   class="{% if request.resolve_match.url_name == 'products' or request.resolve_match.url_name == 'category'%}active{%endif%}">
+				products
+			</a>
+		</li>
+		<li>
+			<a href="{% url 'general:contact' %}"
+			   class="{% if request.resolve_match.url_name == 'contact' %}active{%endif%}">
+				contacts
+			</a>
+		</li>
+
+		{% if user.is_authenticated %}
+		<li>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                        {{ user.first_name|default:"user"|title }}
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="{% url 'auth:edit' %}">
+								<p>profile</p>
+							</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'orders:index' %}">
+                                <p>orders</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+		{% endif %}
+		{%if user.is_superuser %}
+		<li>
+			<a href="{% url 'new_admin:index' %}"> admin </a>
+		</li>
+		{% endif %}
+		<li>
+			{% if user.is_authenticated %}
+			<a href="{% url 'auth:logout' %}">logout</a>
+			{% else %}
+			<a href="{% url 'auth:login' %}">login</a>
+			{% endif %}
+		</li>
+
+	</ul>
+	<a href="#" class="search"></a>
+    <a href="{% url 'basket:index' %}" class="basket">
+		{% if user.is_authenticated %}
+		<span>{{ user.basket_price }} руб. ({{ user.basket_qty }})</span>
+		{%endif%}
+	</a>
+</div>

@@ -1,0 +1,14 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: 
+ =?utf-8?b?0J/QvtC00YLQstC10YDQttC00LXQvdC40LUg0YPRh9C10YLQvdC+0Lkg0LfQsNC/?=
+ =?utf-8?b?0LjRgdC4IHF3ZXJ0eQ==?=
+From: django@gbshop.local
+To: qwerty@gbshop.local
+Date: Fri, 09 Apr 2021 20:08:51 -0000
+Message-ID: <161799893182.8334.11604931240522405871@sergey-R560>
+
+Для подтверждения учетной записи qwerty на портале http://127.0.0.1:8000 перейдите по ссылке: 
+http://127.0.0.1:8000/auth/user/verify/qwerty@gbshop.local/e702e338602f3189f7296a0e2a9fd0c147bfd292/
+-------------------------------------------------------------------------------

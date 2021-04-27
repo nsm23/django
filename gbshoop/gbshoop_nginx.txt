@@ -1,0 +1,18 @@
+server {
+    listen 80;
+    server_name 192.168.1.65;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location /static/ {
+        root /home/sergey/gbshoop;
+    }
+
+    location /media/ {
+        root /home/sergey/gbshoop;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/sergey/gbshoop/gbshoop.sock;
+    }
+}

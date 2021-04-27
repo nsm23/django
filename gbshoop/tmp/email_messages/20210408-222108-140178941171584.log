@@ -1,0 +1,14 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: 
+ =?utf-8?b?0J/QvtC00YLQstC10YDQttC00LXQvdC40LUg0YPRh9C10YLQvdC+0Lkg0LfQsNC/?=
+ =?utf-8?b?0LjRgdC4IHN2ZXRhMjIy?=
+From: django@gbshop.local
+To: sveta@gbshop.ru
+Date: Thu, 08 Apr 2021 19:21:08 -0000
+Message-ID: <161790966885.7353.6859694169141554158@sergey-R560>
+
+Для подтверждения учетной записи sveta222 на портале http://localhost:8000 перейдите по ссылке: 
+http://localhost:8000/auth/user/verify/sveta@gbshop.ru/efe5fd49d7f474a5c40edbbddfc31ac43adc43c7/
+-------------------------------------------------------------------------------

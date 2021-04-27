@@ -1,0 +1,12 @@
+[Unit]
+Description=gbshoop daemon
+After=network.target
+
+[Service]
+User=sergey
+Group=www-data
+WorkingDirectory=/home/sergey/gbshoop
+ExecStart=/usr/bin/gunicorn3 --access-logfile server.logs --workers 2 --bind unix:/home/sergey/gbshoop/gbshoop.sock gbshoop.wsgi
+
+[Install]
+WantedBy=multi-user.target
